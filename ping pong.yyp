@@ -3,16 +3,19 @@
   "resourceVersion": "1.6",
   "name": "ping pong",
   "resources": [
-    {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},"order":15,},
-    {"id":{"name":"Wall_Obj","path":"objects/Wall_Obj/Wall_Obj.yy",},"order":1,},
+    {"id":{"name":"Void_Obj","path":"objects/Void_Obj/Void_Obj.yy",},"order":3,},
+    {"id":{"name":"Wall_Obj","path":"objects/Wall_Obj/Wall_Obj.yy",},"order":4,},
     {"id":{"name":"Ball_Spr","path":"sprites/Ball_Spr/Ball_Spr.yy",},"order":0,},
+    {"id":{"name":"get_random","path":"scripts/get_random/get_random.yy",},"order":0,},
     {"id":{"name":"Player_Obj","path":"objects/Player_Obj/Player_Obj.yy",},"order":2,},
     {"id":{"name":"Ball_Obj","path":"objects/Ball_Obj/Ball_Obj.yy",},"order":0,},
     {"id":{"name":"Wall_Spr","path":"sprites/Wall_Spr/Wall_Spr.yy",},"order":1,},
-    {"id":{"name":"Enemy_Obj","path":"objects/Enemy_Obj/Enemy_Obj.yy",},"order":3,},
+    {"id":{"name":"Void_Spr","path":"sprites/Void_Spr/Void_Spr.yy",},"order":4,},
+    {"id":{"name":"Enemy_Obj","path":"objects/Enemy_Obj/Enemy_Obj.yy",},"order":1,},
+    {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":1,},
     {"id":{"name":"Enemy_Spr","path":"sprites/Enemy_Spr/Enemy_Spr.yy",},"order":3,},
     {"id":{"name":"Player_Spr","path":"sprites/Player_Spr/Player_Spr.yy",},"order":2,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Game","path":"rooms/Game/Game.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Windows","path":"options/windows/options_windows.yy",},
@@ -26,7 +29,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Game","path":"rooms/Game/Game.yy",},},
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
@@ -43,6 +47,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room1","folderPath":"folders/Objects/Room1.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room2","folderPath":"folders/Objects/Room2.yy","order":1,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

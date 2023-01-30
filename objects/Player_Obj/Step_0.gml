@@ -1,8 +1,19 @@
 Mouse_Y = device_mouse_y_to_gui(0);
 
-y = Mouse_Y;
-
-if(place_meeting(x,y,Wall_Obj))
+if (y < Mouse_Y)
 {
-y = -Mouse_Y
+	y += P_Spd;
+	if(place_meeting(x,y,Wall_Obj))
+	{
+		y -=P_Spd;
+	}
+}
+
+if (y > Mouse_Y)
+{
+	y -= P_Spd;
+	if(place_meeting(x,y,Wall_Obj))
+	{
+		y +=P_Spd;
+	}
 }

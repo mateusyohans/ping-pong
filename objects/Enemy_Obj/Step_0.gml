@@ -1,8 +1,18 @@
-if(y > Ball_Obj.y)
+
+if(y > Ball_Obj.y and Ball_Obj.x > room_width/2 )
 {
-	y -= e_spd;
+	y -= E_Spd;
+	if(place_meeting(x,y+E_Spd,Wall_Obj))
+	{
+		y += E_Spd;
+	}
 }
-if(y < Ball_Obj.y)
+
+if(y < Ball_Obj.y and Ball_Obj.x > 640)
 {
-	y += e_spd;
+	if(place_meeting(x,y+E_Spd,Wall_Obj))
+	{
+		y -= E_Spd;
+	}
+	y += E_Spd;
 }

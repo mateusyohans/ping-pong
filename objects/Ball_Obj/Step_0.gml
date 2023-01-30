@@ -51,3 +51,11 @@ if(place_meeting(x,y+vsp,Enemy_Obj))
 {
 	vsp = -vsp;
 }
+
+if(place_meeting(x,y,Void_Obj))
+{
+	x = room_width/2;
+	y = room_height/2;
+	vsp = get_random([4,-4]);
+	hsp = get_random([4,-4]);
+}
